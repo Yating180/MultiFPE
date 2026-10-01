@@ -22,6 +22,10 @@ MultiFPE/
 └── main_SCB_RJCMA.py                   # Training and validation entry point
 ```
 
+## Data
+
+Due to licensing restrictions, we cannot provide the complete AFLFP and MEEI datasets. Users need to obtain the raw datasets from their respective official project pages. The dataset annotations (facial landmarks and palsy severity grades) are publicly available. Users may only use the dataset annotations for non‑commercial academic research. Before downloading the dataset annotations, users are required to send an application email with the signed [End User License Agreement](End_User_License_Agreement.pdf) as an attachment to xiayifan@sdu.edu.cn using a valid academic or institutional email account.
+
 ## Environment Setup
 
 Install the following dependencies:
