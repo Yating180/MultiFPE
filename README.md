@@ -3,8 +3,10 @@
 The official code for the paper _'MultiFPE: Multi-Representation Fusion Network for Facial Palsy Evaluation in Facial Videos'_.
 MultiFPE is a novel multi-representation fusion framework for FPE, designed to effectively integrate complementary facial representations for reliable facial palsy evaluation.
 
+**This paper has been accepted by IEEE Journal of Biomedical and Health Informatics.**
+
 <p align="center">
-<img src="Pipeline.png" width="100%" />
+<img src="Pipeline.jpg" width="100%" />
 </p>
 
 ## Project Structure
@@ -122,4 +124,20 @@ Replace `MEEI` with `AFLFP` to train the 5 folds of the AFLFP dataset.
 | `--wd` | `1e-4`   | Weight decay |
 | `--print-freq` | `4`      | Training/validation log print frequency |
 | `--resume` | `None`   | Checkpoint path for resuming training |
+
+## Citation
+
+If you find our work useful, please consider citing our paper:
+
+```bibtex
+@ARTICLE{11658594,
+  author={Zhang, Yating and Jian, Muwei and Yu, Hui and Dong, Junyu and Xia, Yifan},
+  journal={IEEE Journal of Biomedical and Health Informatics}, 
+  title={MultiFPE: Multi-Representation Fusion Network for Facial Palsy Evaluation in Facial Videos}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-14},  
+  doi={10.1109/JBHI.2026.3724847}
+
 
