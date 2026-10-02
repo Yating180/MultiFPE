@@ -43,6 +43,11 @@ ckpt/ir50.pth
 ckpt/mobilefacenet_model_best.pth.tar
 ```
 
+| File name | GoogleDrive link | BaiduNetdisk link |
+| ---- | ---- | ---- |
+| ir50.pth | [link](https://drive.google.com/drive/folders/1Wr9_TObGXqxGV5LPhmi2PE2ASCWlhIrQ) | [link](https://pan.baidu.com/s/1-T9dSCWuaKMJGfAfla1J0A?pwd=5vfx) |
+| mobilefacenet_model_best.pth.tar | [link](https://drive.google.com/drive/folders/1Wr9_TObGXqxGV5LPhmi2PE2ASCWlhIrQ) | [link](https://pan.baidu.com/s/1-T9dSCWuaKMJGfAfla1J0A?pwd=5vfx) |
+
 ## Data Preparation
 
 The training script reads the training and test sets from `annotation/<data_set>_train.txt` and `annotation/<data_set>_test.txt`. The current repository contains the following 5-fold splits:
