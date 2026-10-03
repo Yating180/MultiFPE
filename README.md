@@ -57,25 +57,6 @@ AFLFP_1 ~ AFLFP_5
 MEEI_1  ~ MEEI_5
 ```
 
-## Create Output Directories
-
-The training script writes logs, curve figures, and checkpoints, but it does not create output directories automatically. Create the directories before the first training run.
-
-Windows PowerShell:
-
-```powershell
-New-Item -ItemType Directory -Force -Path `
-  log/model1/MEEI, log/model1/AFLFP, `
-  checkpoint/model1/MEEI, checkpoint/model1/AFLFP, `
-  best_checkpoint/model1/MEEI, best_checkpoint/model1/AFLFP
-```
-
-Linux/macOS:
-
-```bash
-mkdir -p log/model1/{MEEI,AFLFP} checkpoint/model1/{MEEI,AFLFP} best_checkpoint/model1/{MEEI,AFLFP}
-```
-
 ## Single-Fold Training and Validation
 
 Run the training command from the project root directory.
@@ -119,20 +100,6 @@ done
 ```
 
 Replace `MEEI` with `AFLFP` to train the 5 folds of the AFLFP dataset.
-
-## Common Parameters
-
-| Parameter | Default      | Description |
-| --- |----------| --- |
-| `--data_set` | `MEEI_5` | Dataset and fold, for example `MEEI_5` or `AFLFP_1` |
-| `--epochs` | `100`    | Total number of training epochs |
-| `-b`, `--batch-size` | `16`     | Batch size |
-| `-j`, `--workers` | `8`      | Number of DataLoader workers |
-| `--lr` | `0.01`   | Initial learning rate |
-| `--momentum` | `0.9`    | SGD momentum |
-| `--wd` | `1e-4`   | Weight decay |
-| `--print-freq` | `4`      | Training/validation log print frequency |
-| `--resume` | `None`   | Checkpoint path for resuming training |
 
 ## Citation
 
