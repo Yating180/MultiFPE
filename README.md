@@ -79,7 +79,6 @@ During training, each epoch performs the following steps:
 2. Validate on `<data_set>_test.txt`.
 3. Record Accuracy, F1-score, Precision, and Recall for both the training and validation sets.
 4. Save the current checkpoint.
-5. If the current validation accuracy is higher, save the best checkpoint and the best confusion matrix.
 
 ## 5-Fold Training
 
