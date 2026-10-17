@@ -19,7 +19,7 @@ MultiFPE/
 │   └── mobilefacenet_model_best.pth.tar
 ├── dataloader/                         # Video frame, static frame, landmark loading, and image augmentation
 ├── models/                             # MultiFPE model architecture
-└── main_SCB_RJCMA.py                   # Training and validation entry point
+└── main_MultiFPE.py                   # Training and validation entry point
 ```
 
 ## Data
@@ -64,13 +64,13 @@ Run the training command from the project root directory.
 Example: train and validate MEEI fold 5:
 
 ```bash
-python main_SCB_RJCMA.py --data_set MEEI_5 --epochs 100 -b 16 -j 8 --lr 0.01
+python main_MultiFPE.py --data_set MEEI_5 --epochs 100 -b 16 -j 8 --lr 0.01
 ```
 
 Example: train and validate AFLFP fold 1:
 
 ```bash
-python main_SCB_RJCMA.py --data_set AFLFP_1 --epochs 100 -b 16 -j 8 --lr 0.01
+python main_MultiFPE.py --data_set AFLFP_1 --epochs 100 -b 16 -j 8 --lr 0.01
 ```
 
 During training, each epoch performs the following steps:
@@ -86,7 +86,7 @@ Windows PowerShell:
 
 ```powershell
 foreach ($fold in 1..5) {
-  python main_SCB_RJCMA.py --data_set "MEEI_$fold" --epochs 100 -b 16 -j 8 --lr 0.01
+  python main_MultiFPE.py --data_set "MEEI_$fold" --epochs 100 -b 16 -j 8 --lr 0.01
 }
 ```
 
@@ -94,7 +94,7 @@ Linux/macOS:
 
 ```bash
 for fold in 1 2 3 4 5; do
-  python main_SCB_RJCMA.py --data_set MEEI_${fold} --epochs 100 -b 16 -j 8 --lr 0.01
+  python main_MultiFPE.py --data_set MEEI_${fold} --epochs 100 -b 16 -j 8 --lr 0.01
 done
 ```
 
